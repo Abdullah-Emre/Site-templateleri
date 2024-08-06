@@ -1,0 +1,682 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/img copy/ust.png" type="image/x-icon">
+
+		<!-- SITE TITLE -->
+		<title>Açı360 - Online Sınav Sistemi | @Açı360.com</title>
+		<meta name="description" content="Açı360 Resmi Web Sitesi">
+   		 <meta name="keywords" content="test, online test, e-test, test yapmak, Yazılım Geliştirme, Web Geliştirme, Akademik Bilgi Sistemleri, Öğrenci Bilgi Sistemi, Uzaktan Eğitim, E-Eğitim, Online Sınav Sistemi, Uzaktan Sınav, İş Zekası Çözümleri, Mobil Uygulama, Mobil, 3fCampus, İnsan Kaynakları İzin Yönetim Sistemi, Online İzin Sistemi, Web Tabanlı, Bulut Sistemler, Açı360, Açı360, Açı360, Visio, Spark, Kurum İçi Sosyal Medya, Uzaktan Çalışma">
+		<!-- Latest Bootstrap min CSS -->
+		<link rel="stylesheet" href="assets/js/intl-tel-input-master/build/css/intlTelInput.min.css">
+
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<!-- Google Font -->
+		<link href="../css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+		<link href="../css2-1?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+		<!--- owl carousel Css-->
+		<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
+		<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+		<!-- animate CSS -->
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<!-- jquery carousel-3d default CSS -->
+		<link rel="stylesheet" href="assets/css/jquery.carousel-3d.default.css">
+		<!--ytp player-->
+		<!-- <link rel="stylesheet" href="assets/css/YTPlayer.css"> -->
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/lightbox2/dist/css/lightbox.css">
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- 3faktoriyel -->
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="" src="../gtag/js?id=UA-44465967-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-44465967-1');
+		</script>
+		<!-- 3faktoriyel -->
+
+		<!-- Venus -->
+		<!-- Global site tag (gtag.js) - Google Ads: 417008266 -->
+		<script async="" src="../gtag/js-1?id=AW-417008266"></script>
+		<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-417008266'); </script>
+		<!-- Venus -->
+	</head>
+
+	<style type="text/css">
+	    /*Cookie Consent Begin*/
+	    #cookieConsent {
+	        z-index: 9999;
+	        position: fixed;
+	        right: 20px;
+	        bottom: 20px;
+	        max-width: 375px;
+	        background-color: #222;
+	        padding: 20px;
+	        border-radius: 5px;
+	        box-shadow: 0 6px 6px rgba(0,0,0,0.25);
+	        margin-left: 30px;
+	        font-family: system-ui;
+	        opacity: 0.95;
+	    }
+
+	    #closeCookieConsent {
+	        border: none;
+	        background: #42b8d4;
+	        color: white;
+	        font-size: 15px;
+	        padding: 7px;
+	        border-radius: 3px;
+	        margin-left: 15px;
+	        cursor: pointer;
+	        transition: all 0.3s ease-in;
+	        display: inline-block;
+	    }
+
+	    #closeCookieConsent:hover {
+	        cursor: pointer;
+	        background: white;
+	        color: #42b8d4;
+	        transition: all 0.3s ease-in;
+	    }
+
+	    #cookieConsent p {
+	        color: white;
+	        font-size: 14px;
+	        line-height: 1.5em;
+	    }
+
+	    #cookieConsent p:last-child {
+	        margin-bottom: 0;
+	        text-align: right;
+	        float: right;
+	    }
+
+	    #cookieConsent h4 {
+	        color: #42b8d4;
+	        font-size: 18px;
+	        font-weight: 600;
+	        margin-bottom: 10px;
+	        text-transform: none;
+	    }
+
+	    #cookieConsent a {
+	        display: inline-block;
+	        color: #42b8d4;
+	        text-decoration: none;
+	        font-size: 15px;
+	        padding-bottom: 2px;
+	        border-bottom: 1px dotted rgba(255,255,255,0.75);
+	        transition: all 0.3s ease-in;
+	    }
+
+	    #cookieConsent a:hover {
+	        color: white;
+	        border-bottom-color: #42b8d4;
+	        transition: all 0.3s ease-in;
+	    }
+
+	    #cookieModal #dynamic-content, #kvkModal #dynamic-content {
+	        color: white;
+	        font-size: 14px;
+	        padding: 20px 25px;
+	    }
+
+	    #cookieModal, #kvkModal {
+	    	z-index: 9999;
+	    }
+
+	    .modal-backdrop {
+	    	opacity: .0 !important;
+	    }
+
+	    .modal-content {
+	    	background-color: rgba(33,33,36,.95)!important;
+	    	text-align: inherit !important;
+	    }
+	    .modal-content ul, .modal-content li {
+		    margin-left: 10px !important;
+		    padding-left: 10px !important;
+		}
+
+		.modal-content h3 {
+		    text-align: center !important;
+		    color: white !important;
+		}
+		/*Cookie Consent Begin*/
+
+	    footer .bottom {
+	    	margin-top: 10px;
+	    	padding: 15px 0;
+	    	font-size: 13px;
+	    	font-family: Raleway, Arial, Helvetica, sans-serif;
+	    	font-weight: 400;
+	    	background-color: rgba(97, 94, 90, 0.1) !important;
+	    }
+
+	    /** MainPage shortcut **/
+	    .mainpage-shortcut {
+		    left: -35px;
+		    z-index: 9999;
+		    position: fixed;
+		    top: 50vh;
+		    cursor: pointer;
+		    padding: 5px 10px;
+		    background-color: rgba(86, 14, 53, 0.8);
+    		border-top-left-radius: 10px;
+    		border-top-right-radius: 10px;
+	    }
+
+	    .rotate90 {
+		    -webkit-transform: rotate(90deg);
+		    -moz-transform: rotate(90deg);
+		    -o-transform: rotate(90deg);
+		    -ms-transform: rotate(90deg);
+		    transform: rotate(90deg);
+		}
+
+		@media (max-width: 767px) {
+		    .mainpage-shortcut {
+		        left: unset;
+		    	right: -35px;
+		    	border-bottom-left-radius: 10px;
+    			border-bottom-right-radius: 10px;
+    			border-top-left-radius: 0;
+    			border-top-right-radius: 0;
+		    }
+		}
+		/** MainPage shortcut **/
+
+		/** Banner **/
+		.home_bg {
+		    height: 700px;
+		    position: relative;
+		}
+
+		.hero-text-img {
+		    padding-top: 250px;
+		}
+
+		.hero-text-img img {
+		  width: 100%;
+		}
+
+		@media only screen and (max-width:768px) {
+			.hero-text-img {
+				width: 90%;
+				padding-top: 0px;
+			}
+		}
+		@media only screen and (max-width:480px) {
+			.home_bg {
+			    height: 600px;
+			    position: relative;
+			}
+
+			.hero-text-img {
+				display: inline-block;
+				padding-top: 60px;
+				width: 100%;
+			}
+		}
+		/** Banner **/
+
+		/** why_choose features **/
+		@media screen and (max-width: 768px) {
+			.single_feature h3 {
+				display: inline;
+			}
+		}
+		/** why_choose features **/
+
+		/** 3D Slider **/
+		#screenshots div[data-child] {
+			padding-top: 0px !important;
+		}
+		/** 3D Slider **/
+
+		.single_about {
+			padding-bottom: 20px;
+		}
+	</style>
+
+    <body data-spy="scroll" data-offset="80">
+    	<!-- Google Tag Manager (noscript) -->
+	    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZPF8TR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	    <!-- End Google Tag Manager (noscript) -->
+
+
+
+		<!-- START PRELOADER -->
+		<div class="preloader">
+			<div class="status">
+				<div class="status-mes"></div>
+			</div>
+		</div>
+		<!-- END PRELOADER -->
+
+		<!-- START MAINPAGE SHORTCUT -->
+		<div class="mainpage-shortcut rotate90">
+			<a href="index.html">
+				<img height="20" src="assets/img copy/ust.png" alt="logo">
+			</a>
+		</div>
+		<!-- END MAINPAGE SHORTCUT -->
+		
+		<!-- START NAVBAR -->
+		<div class="navbar navbar-default navbar-fixed-top menu-top menu-shrink">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Menü</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand"><img style="height: 80px; width: 80px; padding-bottom: 10px;" src="assets/img copy/ust.png" alt="logo"></a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<nav>
+						<ul class="nav navbar-nav navbar-right">
+
+							<li><a class="page-scroll" href="#özellikler">ÖZELLİKLER</a></li>
+							<li><a class="page-scroll" href="#ekrangörüntüleri">EKRAN GÖRÜNTÜLERİ</a></li>
+							<li><a class="page-scroll" href="#referanslar">REFERANSLAR</a></li>
+							<li><a class="page-scroll" href="#demo">DEMO</a></li>
+							<li><a class="page-scroll" href="#demo">İLETİŞİM</a></li>
+							<li><a class="page-scroll" href="#dil">EN</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div><!--- END CONTAINER -->
+		</div>
+		<!-- END NAVBAR -->
+
+		<!-- START HOME -->
+		<section data-stellar-background-ratio="0.3" id="home" class="home_bg" style="background-image: url(assets/img/bg/home-video-bg.jpg); background-size:cover; background-position: center center;">
+			<!-- <a class="player" data-property="{videoURL:'https://youtu.be/WFD9kY3dhfU',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a> -->
+			<div class="container">
+				<div class="row">
+				  <div class="col-md-4 col-sm-12 col-xs-12">
+					<div class="hero-text">
+						<h2>ARTIK ONLINE SINAV YAPMAK ÇOK KOLAY</h2>
+					</div>
+				  </div><!--- END COL -->
+
+				  <div class="col-md-8 col-sm-12 col-xs-12 text-center">
+					<div class="hero-text-img">
+						<img src="assets/img/3fcampus_banner_mockup.png" alt="">
+					</div>
+				  </div><!--- END COL -->
+				</div><!--- END ROW -->
+			</div><!--- END CONTAINER -->
+		</section>
+		<!-- END  HOME -->
+
+		<!-- START ABOUT -->
+		<section id="feature" class="about-content section-padding" style="margin-top:2%">
+			<div class="container">
+				<div class="row">
+					<div class="section-title text-center wow zoomIn">
+						<h2>Açı360, ONLINE BİR SINAV YÖNETİM SİSTEMİDİR. KOLAYCA SINAVLARINIZI OLUŞTURABİLİR,<br> ÖĞRENCİLERİNİZİ YA DA ÇALIŞANLARINIZI SINAV YAPABİLİRSİNİZ.</h2>
+						<div class="line"></div>
+						<h4></h4><br>
+						<p>Açı360 sayesinde, birden çok bölgede, bir çok saha personeline sahip kurum ve şirketlerde<br> eğitim kurumlarında, üniversitelerde, araştırma projelerinde belli gruplara yönelik veri toplamak amacıyla<br>verilen iç eğitimlerin geri dönüşlerini ölçmek amacıyla, kullanıcılara, bir çok konuda çeşitli soru havuzlarından seçilen farklı zorluk seviyelerindeki sorulardan oluşan online sınavlar yapılabilir<br> bunların sonuçları sınav bitiminde anında görüntülenebilir, sonuçlar çeşitli grafik ve raporlarla değerlendirilebilir,  performans takibi yapılabilir.</p><br>
+						<h2>BASİT, HIZLI, KOLAY SINAV YAPMANIN YOLU</h2>
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="single_about">
+							<i class="fa fa-globe"></i>
+							<h4>HER YERDEN SINAV</h4>
+							<p>Kullanıcılarınız dünyanın neresinde olursa olsun, aynı anda sınav olabilirler. Bu sayede bir çok bölgede, bir çok saha personeline, öğrenciye sınav yapabilirsiniz. </p>
+						</div>
+					</div><!-- END COL-->
+
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="single_about">
+							<i class="fa fa-university"></i>
+							<h4>İÇ EĞİTİM / E-EĞİTİM</h4>
+							<p>Verilen iç eğitimlerin, e-eğitimlerin geri dönüşlerini ölçmek için kullanılabilir. Tüm kullanıcılara aynı anda sınav yapılabileceği gibi, belirli bir tarih aralığında kullanıcıların istediği zaman sınav olabilmesi de mümkündür.  </p>
+						</div>
+					</div><!-- END COL-->
+
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="single_about">
+							<i class="fa fa-book"></i>
+							<h4>FARKLI SINAV TÜRLERİ</h4>
+							<p>Çoktan seçmeli, boşluk doldurma, doğru yanlış vb. gibi farklı soru tipleri oluşturulabilir, ya da tüm bu soru tiplerinin aynı anda yer aldığı sınavlar yapabilirsiniz.</p>
+						</div>
+					</div><!-- END COL-->
+				</div><!-- END ROW-->
+			</div><!-- END CONTAINER-->
+		</section>
+		<!-- END ABOUT -->
+
+		<!-- START FEATURED ONE -->
+		<section class="feature-one section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9 col-sm-7 col-xs-12">
+						<div class="single_feature_img">
+							<img class="img-responsive wow bounceIn" data-wow-delay=".6s" src="assets/img/macbook1.png" alt="">
+						</div>
+					</div><!-- END COL-->
+					<div class="col-md-3 col-sm-5 col-xs-12">
+						<div class="single_feature_one">
+							<h3>Düşük<br> <strong>Başlangıç Maliyetleri</strong></h3>
+							<p>Açı360, Bulut Tabanlı çalışabilir. SaaS/Hizmet Olarak Yazılım opsiyonu ile de dilediğiniz kadar kiralayabilirsiniz. Bu sayede bakım, yedekleme, sunucu ve lisans satın alma ve personel maaliyetleri olmadan hemen kullanmaya başlayabilirsiniz. </p>
+							<a class="single_feature_btn_light page-scroll" href="#more-features">Detaylı Bilgi</a>
+						</div>
+					</div><!-- END COL-->
+				</div><!-- END ROW-->
+			</div><!-- END CONTAINER-->
+		</section>
+		<!-- END FEATURED ONE -->
+
+		<!-- START FEATURED TWO -->
+		<section class="feature-two section-padding" style="background:#f9f9f9">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-5 col-xs-12">
+						<div class="single_feature_two">
+							<h3>Platformdan<br> <strong>Bağımsızdır</strong></h3>
+							<p>Açı360, Web Tabanlıdır. Tüm güncel Web tarayıcılarında çalışır. Bilgisayarınızdan, cep telefonunuzdan, tabletten, her seviyedeki tüm işlemlerinizi gerçekleştirebilirsiniz. </p>
+							<a class="single_feature_btn_light page-scroll" href="#more-features">Detaylı Bilgi</a>
+						</div>
+					</div><!-- END COL-->
+					<div class="col-md-9 col-sm-7 col-xs-12">
+						<div class="single_feature_two_img">
+							<img class="img-responsive wow bounceIn" data-wow-delay=".6s" src="assets/img/imac1.png" alt="">
+						</div>
+					</div><!-- END COL-->
+				</div><!-- END ROW-->
+			</div><!-- END CONTAINER-->
+		</section>
+		<!-- END FEATURED ONE -->
+
+		<!-- START MAIN FEATURES -->
+		<section class="why_choose_us section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="section-title text-center wow zoomIn">
+						<h2>GELİŞMİŞ ÖZELLİKLER</h2>
+						<div class="line"></div>
+						<p>Online sınav yapmanın en kolay ve güvenli yolu Açı360'ın öne çıkan özellikleri</p>
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<div id="why_choose">
+							<!-- Wrapper for slides -->
+							<div class="row ">
+								<div class="col-sm-6">
+									<div class="single_feature">
+										<i class="fa fa-lock"></i>
+										<h3>ZORLUK SEVİYELERİ</h3>
+										<span></span>
+										<p> Bir çok konuda çeşitli soru havuzlarından seçilen farklı zorluk seviyelerindeki sorulardan oluşan online sınavlar yapılabilir.</p>
+									</div>
+								</div><!-- END COL-->
+								<div class="col-sm-6">
+									<div class="single_feature">
+										<i class="fa fa-power-off"></i>
+										<h3>GÜÇLÜ VE ESNEK </h3>
+										<span></span>
+										<p>Butik şirketlerden, binlerce öğrencisi olan köklü üniversitelere, kullanıcı sayısından bağımsız olarak her ihtiyacı karşılayacak seviyede güçlüdür. </p>
+									</div>
+								</div><!-- END COL-->
+								<div class="col-sm-6">
+									<div class="single_feature">
+										<i class="fa fa-code-fork"></i>
+										<h3>ENTEGRE</h3>
+										<span></span>
+										<p>Kullanıcı bilgileri, ve Açı360'da yer alması istenen diğer bilgiler, Öğrenci Bilgi Sistemi, Kütüphane, LMS, Kurum Portalı vb. gibi sistemlerden otomatik olarak çekilebilir.</p>
+									</div>
+								</div><!-- END COL-->
+								<div class="col-sm-6">
+									<div class="single_feature">
+										<i class="fa fa-cogs"></i>
+										<h3>FARKLI KATEGORİLER</h3>
+										<span></span>
+										<p>Kullanıcılara farklı kategori ve alt kategorilerdeki soru havuzlarından sınavlar kolaylıkla oluşturulabilir.</p>
+									</div>
+								</div><!-- END COL-->
+							</div><!-- END CAROUSEL INNER -->
+						</div><!-- END CAROUSEL SLIDE -->
+					</div><!--- END COL -->
+					<div class="col-md-8 col-sm-12 col-xs-12">
+						<div class="feature_img">
+							<img src="assets/img copy/açı360resim1.png" alt="">
+						</div>
+					</div><!--- END COL -->
+				</div><!--- END ROW -->
+			</div><!--- END CONTAINER -->
+		</section>
+		<!-- END MAIN FEATURES -->
+
+
+		<!-- START MORE FEATURES -->
+		<section id="more-features" class="more_features section_padding">
+			<div class="container">
+				<div class="row">
+					<div class="section-title text-center wow zoomIn">
+						<h2>Ve Daha Fazlası </h2>
+						<div class="line"></div>
+						<p>Açı360 Özelliklerinden Bazıları</p>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single_more_feature">
+							<div class="bg-icon">
+								<span class="fa fa-users"></span>
+							</div>
+							<div class="single_icon">
+								<span class="fa fa-users"></span>
+							</div>
+							<div class="single_text">
+								<h3>GELİŞMİŞ KULLANICI YÖNETİMİ</h3>
+								<p>İnsan Kaynakları, İç Eğitim Birimi, Müdür, Akademisyen, Öğrenci, İdari Personel tipi kullanıcılara gelişmiş roller atayabilme.</p>
+							</div>
+						</div>
+					</div><!--- END COL -->
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single_more_feature">
+							<div class="bg-icon">
+								<span class="fa fa-file-excel-o"></span>
+							</div>
+							<div class="single_icon">
+								<span class="fa fa-file-excel-o"></span>
+							</div>
+							<div class="single_text">
+								<h3>TOPLU SORU AKTARABİLME</h3>
+								<p>Soru havuzlarına soruları tek tek ya da bir dosya yardımı ile topluca aktarabilirsiniz. </p>
+							</div>
+						</div>
+					</div><!--- END COL -->
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single_more_feature">
+							<div class="bg-icon">
+								<span class="fa fa-book"></span>
+							</div>
+							<div class="single_icon">
+								<span class="fa fa-book"></span>
+							</div>
+							<div class="single_text">
+								<h3>EĞİTİM PLATFORMU</h3>
+								<p>Açı360, Spark Kurum İçi Sosyal Medya Platformu ile birleştirilerek özellikle eğitim kurumları için yeni nesil bir <a target="_blank" href="https://www.3faktoriyel.com/spark-kurum-ici-sosyal-medya/"> E-Öğrenme Platformu </a> olarak kullanılabilir. </p>
+							</div>
+						</div>
+					</div><!--- END COL -->
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single_more_feature">
+							<div class="bg-icon">
+								<span class="fa fa-pencil-square-o"></span>
+							</div>
+							<div class="single_icon">
+								<span class="fa fa-pencil-square-o"></span>
+							</div>
+							<div class="single_text">
+								<h3>E-İMZA DESTEĞİ</h3>
+								<p>Tüm sistemi e-imza ile kullanabilme.  </p>
+							</div>
+						</div>
+					</div><!--- END COL -->
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single_more_feature">
+							<div class="bg-icon">
+								<span class="fa fa-shield"></span>
+							</div>
+							<div class="single_icon">
+								<span class="fa fa-shield"></span>
+							</div>
+							<div class="single_text">
+								<h3>YÜKSEK GÜVENLİK</h3>
+								<p>Tüm endüstri standartındaki güvenlik protokollerine sahip. Bulut sunucular desteği ile gelişmiş loglama ve yedekleme yönetimi.</p>
+							</div>
+						</div>
+					</div><!--- END COL -->
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single_more_feature">
+							<div class="bg-icon">
+								<span class="fa fa-bar-chart"></span>
+							</div>
+							<div class="single_icon">
+								<span class="fa fa-bar-chart"></span>
+							</div>
+							<div class="single_text">
+								<h3>GELİŞMİŞ RAPOR VE İSTATİSTİKLER</h3>
+								<p>Detaylı veri analizleri ile gelişmiş rapor ve istatistikler alabilme, infografikler oluşturabilme.</p>
+							</div>
+						</div>
+					</div><!--- END COL -->
+				</div><!--- END ROW -->
+			</div><!--- END CONTAINER -->
+		</section>
+		<!-- END MORE FEATURES -->
+
+		<!-- START FOOTER -->
+		<footer class="footer colors-g page-transition non-preloading" style="padding-bottom: 0">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+
+					</div><!-- END COL -->
+
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<a href="index.html"><img height="42" src="assets/img copy/ust.png" alt="logo"></a>
+					</div><!-- END COL -->
+					<style>
+						#footer1{
+							left: -280px;
+						}
+					</style>
+					<div id="footer1" class="col-md-4 col-sm-4 col-xs-12">
+						<div class="footer_social pull-right">
+							<ul>
+								<li><a class="f_facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="f_twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a class="f_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a class="f_youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+								<li><a class="f_skype" href="#/"><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div><!-- END COL -->
+				</div><!--- END ROW -->
+			</div><!--- END CONTAINER -->
+
+			<div class="bottom text-center">
+		        © 2024  Açı360 - Acı360.com <a data-toggle="modal" data-target="#kvkModal"></a>
+		    </div>
+		</footer>
+		<!-- END FOOTER -->
+	</body>
+<!-- Latest jQuery -->
+	<script src="assets/js/jquery-1.12.4.min.js"></script>
+<!-- Latest compiled and minified Bootstrap -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- modernizer JS -->
+	<script src="assets/js/modernizr-2.8.3.min.js"></script>
+<!-- stellar js -->
+	<script src="assets/js/jquery.stellar.min.js"></script>
+<!-- owl-carousel min js  -->
+	<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+<!-- 3d carousel js -->
+	<script src="assets/js/jquery.resize.ex.js"></script>
+	<script src="assets/js/waitforimages.js"></script>
+	<script src="assets/js/jquery.carousel-3d.min.js"></script>
+<!-- video scripts -->
+	<!-- <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+	<script type="text/javascript">
+		$('.player').mb_YTPlayer();
+	</script> -->
+
+<!-- WOW - Reveal Animations When You Scroll -->
+	<script src="assets/js/wow.min.js"></script>
+<!-- scripts js -->
+	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+	<!-- form-contact js -->
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="assets/js/intl-tel-input-master/build/js/intlTelInput-jquery.min.js"></script>
+	<script src="assets/js/form-contact.js"></script>
+	<script type="text/javascript">
+		// Coockie kullanımı uyarısını göstermek ve kapatmak
+	    $(document).ready(function(){
+	        const cookieShow = localStorage.cookieShow,
+	            cookieDate   = localStorage.cookieTime,
+	            diff         = parseInt((Date.now() - cookieDate) / 360000 / 24);
+
+	        if (cookieShow !== "false" || diff > 30) {
+	            setTimeout(function () {
+	                $("#cookieConsent").fadeIn(200);
+	            }, 1500);
+	        }
+
+	        if (diff >= 30) {
+	            localStorage.removeItem("cookieShow");
+	            localStorage.removeItem("cookieTime");
+	        }
+	    });
+
+	    $("#closeCookieConsent").click(function() {
+	        localStorage.setItem("cookieShow", false);
+	        localStorage.setItem("cookieTime", Date.now());
+
+	        $("#cookieConsent").fadeOut(200);
+	    });
+
+	    $("#gsm").intlTelInput({
+	        utilsScript: "assets/js/intl-tel-input-master/build/js/utils.js",
+	        initialCountry: "tr",
+	        preferredCountries: ["tr"],
+	        separateDialCode: false
+    	});
+	</script>
+</html>
+
+
+
